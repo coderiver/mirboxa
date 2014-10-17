@@ -1,0 +1,12 @@
+
+
+@font-face {
+    font-family: 'sports_worldregular';
+    src: url('sports_world-regular.eot');
+    src: url('sports_world-regular.eot?#iefix') format('embedded-opentype'),
+         url('sports_world-regular.woff') format('woff'),
+         url('sports_world-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
