@@ -4,7 +4,8 @@
 	font-family: 'sports_worldregular', Arial, serif
 =roboto
 	font-family: 'Roboto', sans-serif
-
+=ptsans
+	font-family: 'PT Sans', sans-serif
 //vars
 $orange: #e9700d
 
@@ -12,20 +13,153 @@ body
 	+roboto 
 	font-size: 16px
 	color: #fff 
-	line-height: 1.4
+	line-height: 1.4 
 
 
 // common blocks      
+.out
+	margin: 0 auto -190px
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	background: url(../img/bg.jpg)
+	-webkit-background-size: 100% 100% 
+	-o-background-size: 100% 100% 
+	background-size: 100% 100%
+.push
+	height: 190px	
+=wrap
+	width: 1200px
+	margin: 0 auto 
+.container
+	+wrap
 
+// header
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 9
+	&__sticky
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		height: 50px
+		background: rgba(#000, .6)
+	&__in
+		position: relative
+		+wrap
+		+clr	
+.logo
+	position: relative
+	float: left
+	width: 160px
+	height: 50px
+	a
+		position: absolute
+		top: 0
+		left: 0
+		width: 160px 
+		height: 240px
+		background: #000
+		+hide-text
+		&:before
+			content: ""
+			position: absolute
+			top: 27px
+			left: 29px
+			+s(logo) 
+.menu
+	float: left
+	ul
+		+clr
+		li
+			float: left
+			a
+				display: block
+				padding: 0 20px
+				font-weight: bold
+				font-size: 14px
+				text-transform: uppercase
+				color: #fff  
+				line-height: 50px
+				text-decoration: none
+				+tr(all 200ms)
+				&:hover
+					color: $orange
+				&.is-active
+					background: $orange
+					&:hover
+						color: #fff 
+.lang
+	float: right
+	+clr
+	li
+		float: left
+		a
+			display: block
+			width: 50px
+			text-align: center
+			font-weight: bold
+			color: #fff
+			line-height: 50px
+			font-size: 14px
+			text-decoration: none
+			text-transform: uppercase
+			color: #636363
+			&:hover
+				color: $orange
+			&.is-active
+				background: $orange
+				color: #fff
+				&:hover
+					color: #fff	
 
-
-
-
-
-
-
-
-
+// footer
+.footer
+	height: 190px
+	&__in
+		+wrap
+		+clr
+		padding-top: 60px
+		+ptsans
+		font-size: 12px
+		color: #4d4d4d
+		a
+			color: $orange
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	&__logo
+		float: left
+		width: 150px
+		margin-right: 55px
+		text-align: center
+		a
+			display: inline-block
+			vertical-align: top
+			+hide-text
+			+s(logo-f)
+	&__copyrights
+		float: left
+		width: 20% 			
+	&__contacts
+		float: left
+		width: 32%
+.qb-interactive
+	position: relative
+	float: right
+	width: 14%
+	+box
+	padding-left: 35px
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+s(qb)
 
 
 

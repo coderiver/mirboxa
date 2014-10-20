@@ -1,11 +1,142 @@
 // Normally mainpage styles
 
-
-
-
-
-
-
+// slick slider
+.banner
+	+wrap
+.slider
+	position: relative
+	&__item
+		position: relative
+		height: 530px
+		overflow: hidden
+	&__img
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 1
+		font-size: 0
+		img
+			width: 100% 	  
+	&__content
+		position: absolute
+		bottom: 80px
+		right: 0
+		left: 0
+		text-align: center
+		z-index: 2
+	&__date
+		display: inline-block
+		padding: 0 22px 
+		+sport
+		font-size: 40px
+		color: #fff
+		background: rgba(#000, 0.7)
+	&__title
+		+sport
+		font-size: 70px
+		a
+			position: relative
+			display: inline-block
+			padding: 0 36px	 	
+			background: $orange
+			text-decoration: none
+			color: #fff
+			+tr(background 200ms)
+			&:before
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 5%
+				right: 5%
+				height: 1px
+				+box-shadow(0 0px 40px 8px #000)
+				z-index: -1
+			&:hover
+				background: #cb5700 	
+	.slick-prev
+		position: absolute
+		top: 190px
+		right: 50px
+		width: 50px
+		height: 50px
+		background: $orange
+		+hide-text
+		+tr(background 200ms)
+		&:before
+			content: ""
+			position: absolute
+			top: 12px
+			left: 17px
+			+s(prev)
+		&:hover
+			background: #cb5700 	
+	.slick-next
+		position: absolute
+		top: 190px
+		right: 0
+		width: 50px
+		height: 50px
+		background: $orange
+		+hide-text
+		+tr(background 200ms)		 
+		&:before
+			content: ""
+			position: absolute
+			top: 12px
+			left: 19px
+			+s(next)
+		&:hover
+			background: #cb5700
+.main
+	position: relative
+	+clr
+.m-news
+	float: left
+	width: 41%
+.m-events
+	float: left
+	width: 25%
+.m-video, .m-photo
+	float: left
+	width: 17%	 		
+.title
+	position: relative
+	padding-left: 70px
+	height: 50px
+	line-height: 50px
+	background: #000  
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 50px
+		height: 50px
+		background: $orange
+	&:after
+		content: ""
+		position: absolute
+		top: 15px
+		left: 13px
+		+s(m-news)
+	&.title_events
+		&:after
+			+s(m-events)	
+	a
+		position: relative
+		display: inline-block
+		font-weight: bold
+		color: #fff
+		text-transform: uppercase
+		text-decoration: none
+		&:after
+			content: "»"
+			position: absolute
+			top: -1px
+			right: -12px
+			color: $orange	
 
 
 
