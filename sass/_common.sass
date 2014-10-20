@@ -33,6 +33,18 @@ body
 	margin: 0 auto 
 .container
 	+wrap
+=shadow
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 5%
+		right: 5%
+		height: 1px
+		+box-shadow(0 0px 40px 8px #000)
+.date
+	color: #464646
+	font-size: 12px			
 
 // header
 .header

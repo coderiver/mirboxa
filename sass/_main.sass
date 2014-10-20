@@ -44,14 +44,8 @@
 			text-decoration: none
 			color: #fff
 			+tr(background 200ms)
+			+shadow
 			&:before
-				content: ""
-				position: absolute
-				bottom: 0
-				left: 5%
-				right: 5%
-				height: 1px
-				+box-shadow(0 0px 40px 8px #000)
 				z-index: -1
 			&:hover
 				background: #cb5700 	
@@ -92,9 +86,33 @@
 .main
 	position: relative
 	+clr
+	+box-shadow(0 40px 40px -28px #000)
 .m-news
 	float: left
 	width: 41%
+	&__item
+		+clr
+		background: #121212
+	&__img
+		float: left
+		width: 200px
+		height: 200px
+		font-size: 0
+		overflow: hidden
+		img
+			width: 100%
+	&__info
+		position: relative
+		overflow: hidden
+		padding: 18px
+		+box 
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: -11px
+			margin-top: -11px 
+			+arr(11, 22, #121212, l)		 
 .m-events
 	float: left
 	width: 25%

@@ -28,6 +28,8 @@ body { font-family: "Roboto", sans-serif; font-size: 16px; color: white; line-he
 
 .container { width: 1200px; margin: 0 auto; }
 
+.date { color: #464646; font-size: 12px; }
+
 .header { position: absolute; top: 0; left: 0; right: 0; z-index: 9; }
 .header__sticky { position: fixed; top: 0; right: 0; left: 0; height: 50px; background: rgba(0, 0, 0, 0.6); }
 .header__in { position: relative; width: 1200px; margin: 0 auto; *zoom: 1; }
@@ -82,7 +84,8 @@ body { font-family: "Roboto", sans-serif; font-size: 16px; color: white; line-he
 .slider__date { display: inline-block; padding: 0 22px; font-family: "sports_worldregular", Arial, serif; font-size: 40px; color: white; background: rgba(0, 0, 0, 0.7); }
 .slider__title { font-family: "sports_worldregular", Arial, serif; font-size: 70px; }
 .slider__title a { position: relative; display: inline-block; padding: 0 36px; background: #e9700d; text-decoration: none; color: white; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
-.slider__title a:before { content: ""; position: absolute; bottom: 0; left: 5%; right: 5%; height: 1px; -moz-box-shadow: 0 0px 40px 8px black; -webkit-box-shadow: 0 0px 40px 8px black; box-shadow: 0 0px 40px 8px black; z-index: -1; }
+.slider__title a:before { content: ""; position: absolute; bottom: 0; left: 5%; right: 5%; height: 1px; -moz-box-shadow: 0 0px 40px 8px black; -webkit-box-shadow: 0 0px 40px 8px black; box-shadow: 0 0px 40px 8px black; }
+.slider__title a:before { z-index: -1; }
 .slider__title a:hover { background: #cb5700; }
 .slider .slick-prev { position: absolute; top: 190px; right: 50px; width: 50px; height: 50px; background: #e9700d; font: 0/0 a; text-shadow: none; color: transparent; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
 .slider .slick-prev:before { content: ""; position: absolute; top: 12px; left: 17px; background: url('../img/icons-se54df3d6ff.png') 0 -386px no-repeat; width: 11px; height: 24px; }
@@ -91,10 +94,16 @@ body { font-family: "Roboto", sans-serif; font-size: 16px; color: white; line-he
 .slider .slick-next:before { content: ""; position: absolute; top: 12px; left: 19px; background: url('../img/icons-se54df3d6ff.png') 0 -352px no-repeat; width: 11px; height: 24px; }
 .slider .slick-next:hover { background: #cb5700; }
 
-.main { position: relative; *zoom: 1; }
+.main { position: relative; *zoom: 1; -moz-box-shadow: 0 40px 40px -28px black; -webkit-box-shadow: 0 40px 40px -28px black; box-shadow: 0 40px 40px -28px black; }
 .main:after { content: " "; display: table; clear: both; }
 
 .m-news { float: left; width: 41%; }
+.m-news__item { *zoom: 1; background: #121212; }
+.m-news__item:after { content: " "; display: table; clear: both; }
+.m-news__img { float: left; width: 200px; height: 200px; font-size: 0; overflow: hidden; }
+.m-news__img img { width: 100%; }
+.m-news__info { position: relative; overflow: hidden; padding: 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.m-news__info:before { content: ""; position: absolute; top: 50%; left: -11px; margin-top: -11px; width: 0px; height: 0px; border-style: solid; border-width: 11px 11px 11px 0; border-color: transparent #121212 transparent transparent; }
 
 .m-events { float: left; width: 25%; }
 
