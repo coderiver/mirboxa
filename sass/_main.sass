@@ -20,7 +20,12 @@
 		z-index: 1
 		font-size: 0
 		img
-			width: 100% 	  
+			position: relative 
+			width: 100%
+			+r(800)
+				width: 800px
+				left: 50%
+				+transform(translateX(-50%)) 	  
 	&__content
 		position: absolute
 		bottom: 90px
@@ -37,24 +42,33 @@
 		background: rgba(#000, 0.7)
 		+r(768)
 			font-size: 32px
+		+r(480)
+			font-size: 22px	
 	&__title
 		+sport
 		font-size: 70px
-		+r(768)
-			font-size: 50px
+		line-height: 1
 		a
 			position: relative
-			display: inline-block
-			padding: 0 36px	 	
+			line-height: 1.2	 	
 			background: $orange
 			text-decoration: none
 			color: #fff
 			+tr(background 200ms)
+			box-shadow: 36px 0 0 0 #e9700d, -36px 0 0 0 #e9700d
 			+shadow
 			&:before
 				z-index: -1
 			&:hover
-				background: #cb5700 	
+				background: #cb5700
+		+r(768)
+			font-size: 50px
+			a
+				box-shadow: 20px 0 0 0 #e9700d, -20px 0 0 0 #e9700d
+				&:before
+					display: none
+		+r(480)
+			font-size: 40px				 	
 	.slick-prev
 		position: absolute
 		top: 190px
@@ -109,7 +123,9 @@
 	+r(1200)
 		width: 400px
 	+r(960)
-		width: 50%	
+		width: 50%
+	+r(600)
+		width: 100%		
 	&__item
 		height: 200px  
 		background: #121212
@@ -123,7 +139,9 @@
 			font-size: 14px
 		+r(960)
 			&.is-removable
-				display: none						
+				display: none
+		+r(320)
+			height: auto								
 	&__img
 		float: left
 		width: 200px
@@ -134,7 +152,10 @@
 			width: 100%
 		+r(1200)
 			width: 160px
-			height: 160px 	
+			height: 160px
+		+r(320)
+			float: none
+			width: 100%	 	
 	&__info
 		position: relative
 		float: right
@@ -155,7 +176,7 @@
 		+r(960)
 			float: none
 			overflow: hidden
-			width: auto		
+			width: auto			
 	&__link
 		text-decoration: none
 		font-size: 16px
@@ -171,7 +192,9 @@
 	+r(1200)
 		width: 240px
 	+r(960)
-		width: 50%	
+		width: 50%
+	+r(600)
+		width: 100%		
 	&__item
 		position: relative
 		height: 200px
@@ -179,7 +202,9 @@
 			height: 160px
 		+r(960)
 			width: 50%
-			float: left	
+			float: left
+		+r(320)
+			width: 100%		
 	&__bg
 		position: absolute
 		top: 0
@@ -188,9 +213,10 @@
 		bottom: 0
 		font-size: 0
 		z-index: 1
+		overflow: hidden
 		img
 			width: 100%
-			height: 100%
+			height: auto
 	&__info
 		position: absolute
 		left: 15px
@@ -230,7 +256,9 @@
 	+r(1200)
 		width: 160px
 	+r(960)
-		width: 50%	
+		width: 50%
+	+r(600)
+		width: 100%		
 	&__item
 		position: relative
 		height: 200px
@@ -265,7 +293,9 @@
 	+r(1200)
 		width: 160px
 	+r(960)
-		width: 50%	
+		width: 50%
+	+r(600)
+		width: 100%		
 	&__item
 		position: relative
 		height: 200px
