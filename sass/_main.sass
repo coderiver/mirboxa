@@ -92,6 +92,8 @@
 	width: 500px
 	+r(1200)
 		width: 400px
+	+r(960)
+		width: 50%	
 	&__item
 		height: 200px  
 		background: #121212
@@ -102,7 +104,10 @@
 					+arr(11, 22, #1a1a1a, l)
 		+r(1200)
 			height: 160px
-			font-size: 14px					
+			font-size: 14px
+		+r(960)
+			&.is-removable
+				display: none						
 	&__img
 		float: left
 		width: 200px
@@ -130,7 +135,11 @@
 			+arr(11, 22, #121212, l)
 		+r(1200)
 			width: 240px
-			height: 160px	
+			height: 160px
+		+r(960)
+			float: none
+			overflow: hidden
+			width: auto		
 	&__link
 		text-decoration: none
 		font-size: 16px
@@ -145,11 +154,16 @@
 	width: 300px
 	+r(1200)
 		width: 240px
+	+r(960)
+		width: 50%	
 	&__item
 		position: relative
 		height: 200px
 		+r(1200)
 			height: 160px
+		+r(960)
+			width: 50%
+			float: left	
 	&__bg
 		position: absolute
 		top: 0
@@ -197,11 +211,18 @@
 	width: 200px
 	+r(1200)
 		width: 160px
+	+r(960)
+		width: 50%	
 	&__item
 		position: relative
 		height: 200px
 		+r(1200)
 			height: 160px
+		+r(960)
+			float: left
+			width: 50%
+			height: auto
+			padding-bottom: 50%	
 	&__bg
 		position: absolute
 		top: 0
@@ -225,11 +246,18 @@
 	width: 200px
 	+r(1200)
 		width: 160px
+	+r(960)
+		width: 50%	
 	&__item
 		position: relative
 		height: 200px
 		+r(1200)
 			height: 160px
+		+r(960)
+			float: left
+			width: 50%
+			height: auto
+			padding-bottom: 50% 	
 	&__bg
 		position: absolute
 		top: 0
