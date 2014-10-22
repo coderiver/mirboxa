@@ -3,6 +3,11 @@
 // slick slider
 .banner
 	+wrap
+	&__inner
+		height: 240px
+		overflow: hidden
+		img
+			width: 100% 
 .slider
 	position: relative
 	&__item
@@ -116,6 +121,7 @@
 .main
 	position: relative
 	+clr
+	background: #1a1a1a
 	+box-shadow(0 40px 40px -28px #000)
 .m-news
 	float: left
@@ -237,8 +243,8 @@
 			+tr(all 200ms)
 		&:hover
 			span
-				background: #cb5700
-				box-shadow: 4px 0 0 0 #cb5700, -4px 0 0 0 #cb5700
+				background: #000
+				box-shadow: 4px 0 0 0 #000, -4px 0 0 0 #000
 		+r(768)
 			font-size: 12px		 	
 	&__passed

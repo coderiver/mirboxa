@@ -103,6 +103,18 @@ body.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 960px) { .qb-interactive { width: 20%; } }
 @media only screen and (max-width: 600px) { .qb-interactive { float: none; width: 150px; margin: 0 auto; } }
 
+.breadcrumbs { background: #050505; }
+.breadcrumbs ul { *zoom: 1; }
+.breadcrumbs ul:after { content: " "; display: table; clear: both; }
+.breadcrumbs ul li { float: left; position: relative; margin-left: 32px; height: 50px; line-height: 50px; }
+.breadcrumbs ul li:before { content: "«"; position: absolute; top: 0px; left: -11px; font-weight: bold; font-size: 14px; color: #e9700d; }
+.breadcrumbs ul li a { font-size: 14px; color: white; font-weight: bold; text-transform: uppercase; text-decoration: none; -moz-transition: color 150ms; -o-transition: color 150ms; -webkit-transition: color 150ms; transition: color 150ms; }
+.breadcrumbs ul li a:hover { color: #e9700d; }
+.breadcrumbs ul li:first-child { background: #e87312; padding: 0 22px; margin-left: 0; }
+.breadcrumbs ul li:first-child a { font-family: "sports_worldregular", Arial, serif; font-size: 28px; }
+.breadcrumbs ul li:first-child a:hover { color: white; }
+.breadcrumbs ul li:first-child:before { display: none; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -110,6 +122,8 @@ body.no-scroll { overflow: hidden; }
 
 .banner { max-width: 1200px; margin: 0 auto; }
 @media only screen and (max-width: 1200px) { .banner { max-width: 960px; } }
+.banner__inner { height: 240px; overflow: hidden; }
+.banner__inner img { width: 100%; }
 
 .slider { position: relative; }
 .slider__item { position: relative; height: 530px; overflow: hidden; }
@@ -139,7 +153,7 @@ body.no-scroll { overflow: hidden; }
 .slider .slick-next:hover { background: #cb5700; }
 @media only screen and (max-width: 768px) { .slider .slick-next { top: auto; bottom: 20px; right: 50%; margin-right: -50px; } }
 
-.main { position: relative; *zoom: 1; -moz-box-shadow: 0 40px 40px -28px black; -webkit-box-shadow: 0 40px 40px -28px black; box-shadow: 0 40px 40px -28px black; }
+.main { position: relative; *zoom: 1; background: #1a1a1a; -moz-box-shadow: 0 40px 40px -28px black; -webkit-box-shadow: 0 40px 40px -28px black; box-shadow: 0 40px 40px -28px black; }
 .main:after { content: " "; display: table; clear: both; }
 
 .m-news { float: left; width: 500px; }
@@ -177,7 +191,7 @@ body.no-scroll { overflow: hidden; }
 .m-events__info { position: absolute; left: 15px; bottom: 15px; line-height: 1; z-index: 2; }
 .m-events__date, .m-events .m-events__title { display: inline-block; color: white; line-height: 1.4; text-transform: uppercase; font-weight: bold; font-size: 14px; text-decoration: none; }
 .m-events__date span, .m-events .m-events__title span { background: #e9700d; box-shadow: 4px 0 0 0 #e9700d, -4px 0 0 0 #e9700d; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
-.m-events__date:hover span, .m-events .m-events__title:hover span { background: #cb5700; box-shadow: 4px 0 0 0 #cb5700, -4px 0 0 0 #cb5700; }
+.m-events__date:hover span, .m-events .m-events__title:hover span { background: black; box-shadow: 4px 0 0 0 black, -4px 0 0 0 black; }
 @media only screen and (max-width: 768px) { .m-events__date, .m-events .m-events__title { font-size: 12px; } }
 .m-events__passed { margin-bottom: 10px; }
 .m-events__passed a { background: white; color: #0d0d0d; font-family: "sports_worldregular", Arial, serif; font-size: 16px; text-decoration: none; box-shadow: 4px 0 0 0 white, -4px 0 0 0 white; }
