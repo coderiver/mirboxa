@@ -9,6 +9,8 @@
 		position: relative
 		height: 530px
 		overflow: hidden
+		+r(960)
+			height: 400px
 	&__img
 		position: absolute
 		top: 0
@@ -21,7 +23,7 @@
 			width: 100% 	  
 	&__content
 		position: absolute
-		bottom: 80px
+		bottom: 90px
 		right: 0
 		left: 0
 		text-align: center
@@ -33,9 +35,13 @@
 		font-size: 40px
 		color: #fff
 		background: rgba(#000, 0.7)
+		+r(768)
+			font-size: 32px
 	&__title
 		+sport
 		font-size: 70px
+		+r(768)
+			font-size: 50px
 		a
 			position: relative
 			display: inline-block
@@ -65,7 +71,12 @@
 			left: 17px
 			+s(prev)
 		&:hover
-			background: #cb5700 	
+			background: #cb5700
+		+r(768)
+			top: auto
+			bottom: 20px
+			right: 50%
+			margin-left: -50px 	 	
 	.slick-next
 		position: absolute
 		top: 190px
@@ -83,6 +94,11 @@
 			+s(next)
 		&:hover
 			background: #cb5700
+		+r(768)
+			top: auto
+			bottom: 20px
+			right: 50%
+			margin-right: -50px	
 .main
 	position: relative
 	+clr
@@ -196,7 +212,9 @@
 		&:hover
 			span
 				background: #cb5700
-				box-shadow: 4px 0 0 0 #cb5700, -4px 0 0 0 #cb5700 	
+				box-shadow: 4px 0 0 0 #cb5700, -4px 0 0 0 #cb5700
+		+r(768)
+			font-size: 12px		 	
 	&__passed
 		margin-bottom: 10px
 		a
