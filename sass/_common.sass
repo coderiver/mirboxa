@@ -14,10 +14,12 @@ body
 	font-size: 16px
 	color: #fff 
 	line-height: 1.4 
-
-
+	&.no-scroll
+		overflow: hidden
+	
 // common blocks      
 .out
+	position: relative
 	margin: 0 auto -190px
 	min-height: 100%
 	height: auto !important
@@ -32,7 +34,7 @@ body
 	max-width: 1200px
 	margin: 0 auto
 	+r(1200)
-		width: 960px 
+		max-width: 960px 
 .container
 	+wrap
 =shadow
@@ -62,10 +64,27 @@ body
 		left: 0
 		height: 50px
 		background: rgba(#000, .6)
+		+r(960)
+			height: 100px
 	&__in
 		position: relative
 		+wrap
-		+clr	
+		+clr
+.menu-btn
+	display: none
+	position: relative
+	float: left
+	width: 100px
+	height: 100px
+	background: #212121
+	&:before
+		content: ""
+		position: absolute
+		top: 30px
+		left: 25px
+		+s(menu)
+	+r(960)
+		display: block	   			
 .logo
 	position: relative
 	float: left
@@ -84,9 +103,23 @@ body
 			position: absolute
 			top: 27px
 			left: 29px
-			+s(logo) 
+			+s(logo)
+		+r(960)
+			height: 100px
+			width: 170px
+			&:before
+				+s(logo-small)	 
 .menu
 	float: left
+	+r(960)
+		display: none
+	&__close
+		display: none
+		position: absolute
+		top: 30px
+		left: 30px 
+		+r(960)
+			display: block	 
 	ul
 		+clr
 		li
@@ -106,12 +139,47 @@ body
 				&.is-active
 					background: $orange
 					&:hover
-						color: #fff 
+						color: #fff
+.menu-popup
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	overflow-y: auto  
+	background: #121212
+	z-index: 10
+	&__close
+		position: absolute
+		top: 30px
+		left: 30px
+		+s(menu-close)
+	ul
+		text-align: center
+		width: 170px
+		margin: 120px auto  
+		li
+			border-top: 1px solid #333
+			line-height: 60px
+			a
+				display: inline-block
+				height: 60px
+				font-weight: bold
+				font-size: 18px
+				color: #fff
+				text-transform: uppercase
+				text-decoration: none
+				&:hover
+					color: $orange
+			&:first-child
+				border-top: none						 
 .lang
 	float: right
 	+clr
 	li
 		float: left
+		+r(960)
+			float: none
 		a
 			display: block
 			width: 50px
