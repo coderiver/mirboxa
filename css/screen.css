@@ -223,3 +223,29 @@ body.no-scroll { overflow: hidden; }
 .title.title_events:after { background: url('../img/icons-s44d3b06db3.png') 0 -354px no-repeat; width: 20px; height: 21px; }
 .title a { position: relative; display: inline-block; font-weight: bold; color: white; text-transform: uppercase; text-decoration: none; }
 .title a:after { content: "»"; position: absolute; top: -1px; right: -12px; color: #e9700d; }
+
+.boxers { *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 20px 15px; }
+.boxers:after { content: " "; display: table; clear: both; }
+.boxers__slide { float: left; width: 380px; }
+.boxers__wrap { padding: 0 5px; }
+.boxers__list { margin-bottom: 20px; }
+.boxers__link { margin-bottom: 20px; padding-left: 6px; line-height: 1; }
+.boxers__link a { text-decoration: none; background: #e9700d; color: white; font-family: "sports_worldregular", Arial, serif; font-size: 24px; line-height: 1.2; text-transform: uppercase; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; box-shadow: 6px 0 0 0 #e9700d, -6px 0 0 0 #e9700d; }
+.boxers__link a:hover { background: black; box-shadow: 6px 0 0 0 black, -6px 0 0 0 black; }
+.boxers__item { position: relative; height: 0; padding-bottom: 100%; }
+.boxers__item > a { display: block; text-decoration: none; color: white; }
+.boxers__item > a:hover .boxers__info, .boxers__item > a:hover .boxers__more { opacity: 1; }
+.boxers__img { position: absolute; top: 0; bottom: 0; right: 0; left: 0; overflow: hidden; z-index: 1; }
+.boxers__img img { width: 100%; }
+.boxers__info { position: absolute; top: 0; bottom: 0; right: 0; left: 0; padding: 20px; z-index: 2; background: rgba(233, 112, 13, 0.8); opacity: 0; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
+.boxers__name { font-family: "sports_worldregular", Arial, serif; font-size: 24px; color: white; }
+.boxers__row { *zoom: 1; margin-bottom: 15px; border-bottom: 1px solid #ec8c3d; }
+.boxers__row:after { content: " "; display: table; clear: both; }
+.boxers__row:first-child { border-bottom: none; }
+.boxers__row:first-child .boxers__col { border-bottom: 1px solid #ec8c3d; }
+.boxers__row:last-child { border-bottom: none; }
+.boxers__col { float: right; width: 45%; }
+.boxers__col:first-child { float: left; }
+.boxers__title { font-size: 12px; color: #f3b785; margin-bottom: 10px; }
+.boxers__value { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
+.boxers__more { position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; line-height: 50px; background: black; font-weight: bold; color: white; text-align: center; opacity: 0; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; z-index: 3; }

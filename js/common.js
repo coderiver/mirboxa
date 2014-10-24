@@ -7,6 +7,11 @@ head.ready(function() {
 		autoplaySpeed: 5000
 	});
 
+	$('.js-boxers').slick({
+		slidesToShow: 3,
+		arrows: false
+	})
+
 	// mobile menu
 
 	$('.js-menu-btn').on('click', function(){
@@ -17,5 +22,24 @@ head.ready(function() {
 		$('.js-menu').hide();
 		$('body').removeClass('no-scroll');
 	});
+
+	// boxers links list height
+
+	(function(){
+		if ($('.boxers__list').length) {
+			var height = $('.boxers__list').height();
+			$('.boxers__list').each(function(){
+				
+				var h = $(this).height();
+				
+				if (h > height) {
+					height = h;
+				};
+
+			});
+			$('.boxers__list').css('height', height);
+		};
+	})();
+
 
 });
