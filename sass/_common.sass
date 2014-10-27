@@ -302,7 +302,13 @@ body
 		
 // breadcrumbs
 .breadcrumbs
-	background: #050505 				
+	background: #050505
+	&.breadcrumbs_inner
+		+r(360)
+			ul
+				li
+					&:first-child
+						display: none 				
 	ul
 		+clr
 		li

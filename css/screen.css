@@ -114,6 +114,7 @@ body.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 600px) { .qb-interactive { float: none; width: 150px; margin: 0 auto; } }
 
 .breadcrumbs { background: #050505; }
+@media only screen and (max-width: 360px) { .breadcrumbs.breadcrumbs_inner ul li:first-child { display: none; } }
 .breadcrumbs ul { *zoom: 1; }
 .breadcrumbs ul:after { content: " "; display: table; clear: both; }
 .breadcrumbs ul li { float: left; position: relative; margin-left: 32px; height: 50px; line-height: 50px; }
