@@ -3,11 +3,19 @@
 // slick slider
 .banner
 	+wrap
+	+r(767)
+		display: none
 	&__inner
 		height: 240px
 		overflow: hidden
 		img
-			width: 100% 
+			position: relative
+			width: 100%
+			+r(1200)
+				width: 960px
+				height: 240px
+				left: 50%
+				+transform(translateX(-50%))
 .slider
 	position: relative
 	&__item
