@@ -13,11 +13,21 @@
         font-size: 0
         background: #121212 
         img
-            width: 100% 
+            width: 100%
+        +r(1200)
+            width: 320px
+            height: 320px
+        +r(960)
+            width: 32%
+            height: auto          
     &__info
         vertical-align: top
         display: table-cell
         width: 800px
+        +r(1200)
+            width: 640px
+        +r(960)
+            width: 68%    
     &__title
         background: $orange
         color: #fff
@@ -42,6 +52,10 @@
             margin-bottom: 10px
             font-size: 24px
             +roboto
+        +r(1200)
+            width: 640px
+        +r(960)
+            width: 68%        
     &__head
         border-bottom: 1px solid #333
         margin-bottom: 30px
@@ -70,6 +84,10 @@
         width: 400px
         float: left
         box-shadow: 0 40px 40px -28px #000
+        +r(1200)
+            width: 320px
+        +r(960)
+            width: 32%    
         ul
             +clr
             li
@@ -83,18 +101,33 @@
     +clr
     font-weight: bold
     font-size: 16px
+    +r(960)
+        padding: 15px 15px 10px 
     &__col
         float: left
         width: 180px
-        margin-right: 60px 
+        margin-left: 60px 
         &:first-child
-            width: 85px
+            margin-left: 0
+            width: 80px
+        +r(1200)
+            width: 172px
+            margin-left: 50px
+        +r(960)
+            width: 33%
+            margin-left: 7%
+            &:first-child
+                width: 20%         
     &__item
         padding: 25px 0 20px
         border-top: 1px solid #333 
         &:first-child
             padding: 0 0 20px
             border-top: none
+        +r(1200)
+            padding: 5px 0 20px
+        +r(960)
+            padding: 5px 0 0      
     &__title
         +ptsans
         color: #4d4d4d
@@ -102,4 +135,6 @@
         margin-bottom: 3px
     &__value
         span
-            color: $orange                                             
+            color: $orange
+        +r(1200)
+            font-size: 14px                                                 
