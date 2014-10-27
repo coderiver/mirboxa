@@ -1,0 +1,105 @@
+// styles for boxer page
+.boxer
+    &__topper
+        display: table
+        width: 100%
+        background: #1a1a1a  
+    &__avatar    
+        display: table-cell
+        vertical-align: top
+        width: 400px
+        height: 400px
+        overflow: hidden
+        font-size: 0
+        background: #121212 
+        img
+            width: 100% 
+    &__info
+        vertical-align: top
+        display: table-cell
+        width: 800px
+    &__title
+        background: $orange
+        color: #fff
+        padding: 0 30px          
+    &__content
+        +clr
+    &__about
+        position: relative
+        width: 800px
+        float: right
+        background: #121212
+        +box
+        padding: 30px
+        +ptsans
+        font-size: 16px
+        box-shadow: 0 40px 40px -28px #000
+        h3
+            margin-bottom: 20px
+        p
+            margin-bottom: 30px
+        h4
+            margin-bottom: 10px
+            font-size: 24px
+            +roboto
+    &__head
+        border-bottom: 1px solid #333
+        margin-bottom: 30px
+        +roboto
+        font-weight: bold
+    &__fact
+        position: relative
+        float: left
+        width: 240px
+        +box
+        margin-right: 30px
+        margin-bottom: 20px 
+        padding: 65px 30px 50px
+        background: $orange
+        color: #fff
+        +ptsans
+        font-size: 14px
+        &:before
+            content: ""
+            position: absolute
+            top: 30px
+            left: 30px
+            +s(star)                      
+    &__media
+        position: relative
+        width: 400px
+        float: left
+        box-shadow: 0 40px 40px -28px #000
+        ul
+            +clr
+            li
+                width: 50%
+                float: left
+                font-size: 0
+                img
+                    width: 100%     
+.stats
+    padding: 30px 30px 10px
+    +clr
+    font-weight: bold
+    font-size: 16px
+    &__col
+        float: left
+        width: 180px
+        margin-right: 60px 
+        &:first-child
+            width: 85px
+    &__item
+        padding: 25px 0 20px
+        border-top: 1px solid #333 
+        &:first-child
+            padding: 0 0 20px
+            border-top: none
+    &__title
+        +ptsans
+        color: #4d4d4d
+        font-size: 12px
+        margin-bottom: 3px
+    &__value
+        span
+            color: $orange                                             
