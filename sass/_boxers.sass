@@ -3,7 +3,9 @@
 .boxers
     +clr
     +box
-    padding: 20px 15px 
+    padding: 20px 15px
+    +r(960)
+        padding-bottom: 70px 
     &__slide
         float: left
         width: 380px
@@ -59,11 +61,29 @@
         z-index: 2
         background: rgba($orange, 0.8)
         opacity: 0
-        +tr(all 200ms) 
+        +tr(all 200ms)
+        +r(1200)
+            padding: 15px
+        +r(680)
+            padding: 10px
+            line-height: 1
+        +r(567)
+            padding: 5px
+        +r(480)
+            padding: 20px              
     &__name
         +sport
         font-size: 24px
         color: #fff
+        +r(1200)
+            line-height: 1.1
+        +r(680)
+            margin-bottom: 5px
+            line-height: 1
+        +r(567)
+            font-size: 20px
+        +r(480)
+            font-size: 24px            
     &__row
         +clr
         margin-bottom: 15px
@@ -73,7 +93,11 @@
             .boxers__col
                 border-bottom: 1px solid #ec8c3d
         &:last-child
-            border-bottom: none             
+            border-bottom: none
+        +r(1200)
+            margin-bottom: 5px
+        +r(480)
+            margin-bottom: 10px                     
     &__col
         float: right
         width: 45%
@@ -83,10 +107,28 @@
         font-size: 12px
         color: #f3b785
         margin-bottom: 10px
+        +r(1200)
+            margin-bottom: 4px
+        +r(680)
+            font-size: 11px
+        +r(567)
+            font-size: 10px
+        +r(480)
+            font-size: 12px
+            margin-bottom: 10px            
     &__value
         font-size: 16px
         font-weight: bold
         margin-bottom: 10px
+        +r(1200)
+            margin-bottom: 4px
+        +r(680)
+            font-size: 15px
+        +r(567)
+            font-size: 14px
+        +r(480)
+            font-size: 16px
+            margin-bottom: 10px             
     &__more
         position: absolute
         bottom: 0
@@ -100,4 +142,37 @@
         text-align: center
         opacity: 0
         +tr(all 200ms)
-        z-index: 3                            
+        z-index: 3
+        +r(1200)
+            width: 40px
+            height: 40px
+            line-height: 40px                            
+    .slick-prev
+        left: 0
+        bottom: 0
+        margin-left: 0
+    .slick-next
+        right: 0
+        bottom: 0     
+        margin-right: 0       
+    .slick-dots
+        position: absolute
+        bottom: 0
+        left: 50px
+        right: 50px
+        text-align: center
+        li
+            display: inline-block
+            height: 50px
+            line-height: 50px
+            margin: 0 17px 
+            button
+                vertical-align: middle
+                +hidetext
+                width: 7px
+                height: 7px
+                border-radius: 50%
+                background: #fff 
+            &.slick-active
+                button
+                    background: $orange          

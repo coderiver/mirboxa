@@ -9,7 +9,25 @@ head.ready(function() {
 
 	$('.js-boxers').slick({
 		slidesToShow: 3,
-		arrows: false
+		arrows: false,
+		infinite: true,
+		responsive: [
+  		  {
+  		    breakpoint: 960,
+  		    settings: {
+  		      slidesToShow: 2,
+  		      dots: true,
+  		      arrows: true
+  		    }
+  		  },
+  		  {
+  		  	breakpoint: 480,
+  		  	settings: {
+  		  		slidesToShow: 1,
+  		  		dots: true
+  		  	}
+  		  }
+  		]
 	})
 
 	// mobile menu

@@ -144,14 +144,16 @@ body.no-scroll { overflow: hidden; }
   .slider__title a { box-shadow: 20px 0 0 0 #e9700d, -20px 0 0 0 #e9700d; }
   .slider__title a:before { display: none; } }
 @media only screen and (max-width: 480px) { .slider__title { font-size: 40px; } }
-.slider .slick-prev { position: absolute; top: 190px; right: 50px; width: 50px; height: 50px; background: #e9700d; font: 0/0 a; text-shadow: none; color: transparent; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
-.slider .slick-prev:before { content: ""; position: absolute; top: 12px; left: 17px; background: url('../img/icons-s44d3b06db3.png') 0 -584px no-repeat; width: 11px; height: 24px; }
-.slider .slick-prev:hover { background: #cb5700; }
-@media only screen and (max-width: 768px) { .slider .slick-prev { top: auto; bottom: 20px; right: 50%; margin-left: -50px; } }
-.slider .slick-next { position: absolute; top: 190px; right: 0; width: 50px; height: 50px; background: #e9700d; font: 0/0 a; text-shadow: none; color: transparent; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
-.slider .slick-next:before { content: ""; position: absolute; top: 12px; left: 19px; background: url('../img/icons-s44d3b06db3.png') 0 -512px no-repeat; width: 11px; height: 24px; }
-.slider .slick-next:hover { background: #cb5700; }
-@media only screen and (max-width: 768px) { .slider .slick-next { top: auto; bottom: 20px; right: 50%; margin-right: -50px; } }
+
+.slick-prev { position: absolute; top: 190px; right: 50px; width: 50px; height: 50px; background: #e9700d; font: 0/0 a; text-shadow: none; color: transparent; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
+.slick-prev:before { content: ""; position: absolute; top: 12px; left: 17px; background: url('../img/icons-s44d3b06db3.png') 0 -584px no-repeat; width: 11px; height: 24px; }
+.slick-prev:hover { background: #cb5700; }
+@media only screen and (max-width: 768px) { .slick-prev { top: auto; bottom: 20px; right: 50%; margin-left: -50px; } }
+
+.slick-next { position: absolute; top: 190px; right: 0; width: 50px; height: 50px; background: #e9700d; font: 0/0 a; text-shadow: none; color: transparent; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
+.slick-next:before { content: ""; position: absolute; top: 12px; left: 19px; background: url('../img/icons-s44d3b06db3.png') 0 -512px no-repeat; width: 11px; height: 24px; }
+.slick-next:hover { background: #cb5700; }
+@media only screen and (max-width: 768px) { .slick-next { top: auto; bottom: 20px; right: 50%; margin-right: -50px; } }
 
 .main { position: relative; *zoom: 1; background: #1a1a1a; -moz-box-shadow: 0 40px 40px -28px black; -webkit-box-shadow: 0 40px 40px -28px black; box-shadow: 0 40px 40px -28px black; }
 .main:after { content: " "; display: table; clear: both; }
@@ -226,6 +228,7 @@ body.no-scroll { overflow: hidden; }
 
 .boxers { *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 20px 15px; }
 .boxers:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 960px) { .boxers { padding-bottom: 70px; } }
 .boxers__slide { float: left; width: 380px; }
 .boxers__wrap { padding: 0 5px; }
 .boxers__list { margin-bottom: 20px; }
@@ -238,14 +241,39 @@ body.no-scroll { overflow: hidden; }
 .boxers__img { position: absolute; top: 0; bottom: 0; right: 0; left: 0; overflow: hidden; z-index: 1; }
 .boxers__img img { width: 100%; }
 .boxers__info { position: absolute; top: 0; bottom: 0; right: 0; left: 0; padding: 20px; z-index: 2; background: rgba(233, 112, 13, 0.8); opacity: 0; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
+@media only screen and (max-width: 1200px) { .boxers__info { padding: 15px; } }
+@media only screen and (max-width: 680px) { .boxers__info { padding: 10px; line-height: 1; } }
+@media only screen and (max-width: 567px) { .boxers__info { padding: 5px; } }
+@media only screen and (max-width: 480px) { .boxers__info { padding: 20px; } }
 .boxers__name { font-family: "sports_worldregular", Arial, serif; font-size: 24px; color: white; }
+@media only screen and (max-width: 1200px) { .boxers__name { line-height: 1.1; } }
+@media only screen and (max-width: 680px) { .boxers__name { margin-bottom: 5px; line-height: 1; } }
+@media only screen and (max-width: 567px) { .boxers__name { font-size: 20px; } }
+@media only screen and (max-width: 480px) { .boxers__name { font-size: 24px; } }
 .boxers__row { *zoom: 1; margin-bottom: 15px; border-bottom: 1px solid #ec8c3d; }
 .boxers__row:after { content: " "; display: table; clear: both; }
 .boxers__row:first-child { border-bottom: none; }
 .boxers__row:first-child .boxers__col { border-bottom: 1px solid #ec8c3d; }
 .boxers__row:last-child { border-bottom: none; }
+@media only screen and (max-width: 1200px) { .boxers__row { margin-bottom: 5px; } }
+@media only screen and (max-width: 480px) { .boxers__row { margin-bottom: 10px; } }
 .boxers__col { float: right; width: 45%; }
 .boxers__col:first-child { float: left; }
 .boxers__title { font-size: 12px; color: #f3b785; margin-bottom: 10px; }
+@media only screen and (max-width: 1200px) { .boxers__title { margin-bottom: 4px; } }
+@media only screen and (max-width: 680px) { .boxers__title { font-size: 11px; } }
+@media only screen and (max-width: 567px) { .boxers__title { font-size: 10px; } }
+@media only screen and (max-width: 480px) { .boxers__title { font-size: 12px; margin-bottom: 10px; } }
 .boxers__value { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
+@media only screen and (max-width: 1200px) { .boxers__value { margin-bottom: 4px; } }
+@media only screen and (max-width: 680px) { .boxers__value { font-size: 15px; } }
+@media only screen and (max-width: 567px) { .boxers__value { font-size: 14px; } }
+@media only screen and (max-width: 480px) { .boxers__value { font-size: 16px; margin-bottom: 10px; } }
 .boxers__more { position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; line-height: 50px; background: black; font-weight: bold; color: white; text-align: center; opacity: 0; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; z-index: 3; }
+@media only screen and (max-width: 1200px) { .boxers__more { width: 40px; height: 40px; line-height: 40px; } }
+.boxers .slick-prev { left: 0; bottom: 0; margin-left: 0; }
+.boxers .slick-next { right: 0; bottom: 0; margin-right: 0; }
+.boxers .slick-dots { position: absolute; bottom: 0; left: 50px; right: 50px; text-align: center; }
+.boxers .slick-dots li { display: inline-block; height: 50px; line-height: 50px; margin: 0 17px; }
+.boxers .slick-dots li button { vertical-align: middle; font: 0/0 a; text-shadow: none; color: transparent; width: 7px; height: 7px; border-radius: 50%; background: white; }
+.boxers .slick-dots li.slick-active button { background: #e9700d; }
