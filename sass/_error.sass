@@ -1,0 +1,73 @@
+// 404 page styles
+.out_error 
+	.header
+		position: relative
+	.logo
+		float: none
+		height: auto
+		margin: 0 auto
+		a
+			display: block
+			position: relative
+			background: transparent
+	.container
+		overflow: hidden
+		min-height: 600px		
+	.content
+		position: relative
+		&__bg
+			position: absolute
+			top: -80px
+			left: 0
+			right: 0
+			height: 717px
+			background: url(../img/gloves-full.png) 50% 0 no-repeat
+			z-index: 1
+		&__in
+			position: relative
+			z-index: 2
+	.menu
+		float: none
+		text-align: center
+		li
+			float: none
+			display: inline-block
+			vertical-align: middle
+		+r(960)
+			display: block
+			width: 160px
+			margin: 0 auto 
+			li
+				+r(767)
+					display: block
+					border-top: 1px solid #333
+					&:first-child
+						border-top: none 
+					a
+						height: 60px
+						line-height: 60px
+									 
+.error
+	padding: 80px 0 100px
+	max-width: 420px
+	margin: 0 auto
+	text-align: center
+	+r(767)
+		padding: 80px 0 50px 
+	&__title
+		+sport
+		font-size: 40px
+		line-height: 1
+		color: #fff
+		+r(767)
+			font-size: 32px
+		+r(480)
+			font-size: 22px	
+	&__number
+		+sport
+		font-size: 100px
+		line-height: 1
+		color: $orange	 				
+	&__hint
+		font-size: 24px
+		color: #fff 	
