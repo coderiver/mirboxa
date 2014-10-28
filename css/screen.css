@@ -421,7 +421,7 @@ body.no-scroll { overflow: hidden; }
 .company__list:after { content: " "; display: table; clear: both; }
 .company__item { position: relative; float: left; width: 400px; padding-bottom: 33.3%; }
 @media only screen and (max-width: 1200px) { .company__item { width: 320px; } }
-@media only screen and (max-width: 960px) { .company__item { width: 33.33%; } }
+@media only screen and (max-width: 960px) { .company__item { width: 33.3333%; } }
 @media only screen and (max-width: 700px) { .company__item { width: 50%; padding-bottom: 50%; box-shadow: 0 40px 40px -28px black; } }
 @media only screen and (max-width: 480px) { .company__item { width: 100%; padding-bottom: 100%; } }
 .company__img { position: absolute; top: 0; bottom: 0; left: 0; right: 0; font-size: 0; z-index: 1; }
