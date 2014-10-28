@@ -59,5 +59,22 @@ head.ready(function() {
 		};
 	})();
 
+	function logoScroll(){
+		if ($('.header__sticky').length) {
+			if ($(window).scrollTop() > 1) {
+				$('.header__sticky').addClass('is-scroll');
+			}
+			else{
+				$('.header__sticky').removeClass('is-scroll');
+			}
+		};
+		
+	}
+	logoScroll();
+	
+
+	$(window).scroll(function(){
+		logoScroll();
+	});
 
 });

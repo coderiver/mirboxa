@@ -93,6 +93,15 @@ body
 		left: 0
 		height: 50px
 		background: rgba(#000, .6)
+		&.is-scroll
+			.logo
+				a
+					height: 50px
+					&:before
+						opacity: 0
+						+transform(translateY(-100%))
+					&:after
+						opacity: 1			
 		+r(960)
 			height: 100px
 	&__in
@@ -133,6 +142,21 @@ body
 			top: 27px
 			left: 29px
 			+s(logo)
+			-moz-transition: opacity 300ms, transform 300ms
+			-o-transition: opacity 300ms, transform 300ms
+			-webkit-transition: opacity 300ms, transform 300ms
+			-ms-transition: opacity 300ms, transform 300ms
+			transition: opacity 300ms, transform 300ms
+			z-index: 2
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 27px
+			+s(logo-scroll)
+			opacity: 0
+			+tr(opacity 300ms 150ms)
+			z-index: 1	
 		+r(960)
 			height: 100px
 			width: 170px
