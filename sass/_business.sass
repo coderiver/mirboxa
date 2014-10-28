@@ -1,0 +1,159 @@
+// business page styles
+.main__topper
+	+clr
+	background: #121212 
+.main__info
+	float: left
+	width: 400px
+	min-height: 400px
+	padding: 30px
+	+box 
+	background: #cb5700 
+	+r(1200)
+		width: 320px
+	+r(960)
+		width: 33%
+	+r(767)
+		width: 100%
+		min-height: 1px		
+.main__block
+	border-bottom: 1px solid #ed8d3d
+	padding-bottom: 40px
+	font-size: 24px
+	+r(767)
+		border-bottom: none 
+.main__text
+	float: right
+	width: 800px
+	+box
+	padding: 30px
+	+ptsans
+	.h2
+		margin-bottom: 20px
+	p
+		margin-bottom: 30px
+	+r(1200)
+		width: 640px
+	+r(960)
+		width: 67%
+	+r(767)
+		width: 100%					
+.parthners 
+	&__title
+		height: 50px
+		line-height: 50px
+		background: #050505
+		padding: 0 20px
+		text-transform: uppercase
+		color: #fff
+		font-size: 14px   		
+	&__row
+		+clr
+		display: inline-block
+		vertical-align: top
+		box-shadow: 0 40px 40px -28px #000	
+		&:nth-child(2n)
+			.parthners__item
+				&:nth-child(2n)
+					background: #121212
+					&:hover
+						background: #000
+				&:nth-child(2n+1)
+					background: #1a1a1a
+					&:hover
+						background: #000
+		+r(960)
+			display: block
+			box-shadow: none
+			&:nth-child(2n)
+				.parthners__item
+					&:nth-child(2n)
+						background: #1a1a1a
+						&:hover
+							background: #000
+					&:nth-child(2n+1)
+						background: #121212
+						&:hover
+							background: #000					 	
+	&__item
+		position: relative
+		float: left
+		width: 300px
+		height: 240px
+		background: #121212
+		text-align: center
+		text-decoration: none
+		box-shadow: 0 40px 40px -28px #000
+		+r(1200)
+			width: 240px
+			height: 200px
+		+r(960)
+			width: 25%
+			height: 0
+			padding-bottom: 25%
+		+r(767)
+			width: 100%
+			padding-bottom: 50%
+		+r(360)
+			padding-bottom: 0
+			height: 200px		 	
+		&:before
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle
+		&:hover
+			background: #000 
+			.parthners__hover
+				opacity: 1
+			.parthners__name
+				color: #fff
+		&:nth-child(2n)
+			background: #1a1a1a
+			&:hover
+				background: #000  				
+		img
+			display: inline-block
+			vertical-align: middle
+	&__img
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		&:before
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle
+	&__name
+		position: absolute
+		bottom: 24px
+		right: 0
+		left: 0
+		text-align: center
+		color: $orange
+		+gpu
+		&:hover
+			color: inherit
+		+r(960)
+			bottom: 14px	 		
+	&__hover
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		opacity: 0
+		+tr(all 200ms)
+		&:before
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle
+		img
+			display: inline-block
+			vertical-align: middle			 		
