@@ -100,8 +100,13 @@ body
 					&:before
 						opacity: 0
 						+transform(translateY(-100%))
+						+r(960)
+							opacity: 1
+							+transform(translateY(0))
 					&:after
-						opacity: 1			
+						opacity: 1
+						+r(960)
+							opacity: 0 			
 		+r(960)
 			height: 100px
 	&__in
@@ -151,7 +156,7 @@ body
 		&:after
 			content: ""
 			position: absolute
-			top: 0
+			top: 4px
 			left: 27px
 			+s(logo-scroll)
 			opacity: 0

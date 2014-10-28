@@ -1,0 +1,86 @@
+// styles for contacts
+.callback
+    position: relative
+    display: inline-block
+    height: 50px
+    width: 220px 
+    +box 
+    background: #e97313
+    padding: 0 0 0 40px
+    font-weight: bold
+    font-size: 14px
+    text-transform: uppercase
+    color: #fff
+    +tr(background 200ms)
+    &:before
+        content: ""
+        position: absolute
+        top: 16px
+        left: 15px
+        +s(mail)
+    &:after
+        content: "»"
+        display: inline-block
+        margin-left: 3px
+        font-weight: bold
+        font-size: 14px
+        +roboto
+    &:hover
+        background: #cb5700         
+    .main__info &
+        margin-top: 40px
+.contacts
+    &__topper
+        padding-bottom: 60px
+        border-bottom: 1px solid #333 
+        +ptsans
+        font-size: 16px
+        color: #fff
+        p
+            margin-bottom: 5px
+        a
+            display: inline-block
+            margin: 34px 0 0
+            text-decoration: none
+            color: $orange
+            +tr(color 200ms)
+            &:hover
+                color: #cb5700
+.contactlist
+    font-size: 0
+    padding-top: 30px
+    margin-left: -5%    
+    & > li
+        display: inline-block
+        vertical-align: top
+        width: 45%
+        margin-bottom: 75px
+        margin-left: 5%
+        font-size: 16px
+        color: #fff
+        +r(860)
+            width: 100%
+            margin-bottom: 35px
+        p
+            margin-bottom: 5px 
+    .contacts__name
+        font-size: 24px
+        margin-bottom: 20px   
+.main_contacts
+    background: transparent
+    box-shadow: none  
+    .main__topper
+        background: transparent
+    .main__text
+        background: #121212      
+        box-shadow: 0 40px 40px -28px #000
+        +r(860)
+            width: 100%
+    .main__info
+        min-height: 340px
+        box-shadow: 0 40px 40px -28px #000
+        +r(860)    
+            width: 100%
+    .main__block
+        +r(767)
+            border-bottom: 1px solid #ed8d3d          
