@@ -67,13 +67,15 @@
 			background: $orange
 			text-decoration: none
 			color: #fff
-			+tr(background 200ms)
+			+tr(all 200ms)
+			+gpu
 			box-shadow: 36px 0 0 0 #e9700d, -36px 0 0 0 #e9700d
 			+shadow
 			&:before
 				z-index: -1
 			&:hover
 				background: #cb5700
+				box-shadow: 36px 0 0 0 #cb5700, -36px 0 0 0 #cb5700
 		+r(768)
 			font-size: 50px
 			a

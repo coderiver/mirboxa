@@ -65,11 +65,17 @@
 		+sport
 		line-height: 1
 		color: #fff
+		text-decoration: none
 		font-size: 24px
+		&:hover
+			span
+				background: #cb5700
+				box-shadow: 8px 0 0 0 #cb5700, -8px 0 0 0 #cb5700 
 		span
 			line-height: 1.2
 			background: $orange
-			box-shadow: 8px 0 0 0 $orange, -8px 0 0 0 $orange  
+			box-shadow: 8px 0 0 0 $orange, -8px 0 0 0 $orange
+			+tr(all 200ms)  
 		z-index: 2
 		+r(900)
 			bottom: 55px
