@@ -334,7 +334,7 @@ body
 	background: #050505
 	&.breadcrumbs_inner
 		+r(360)
-			ul
+			& > ul
 				li
 					&:first-child
 						display: none
@@ -342,7 +342,7 @@ body
 		+clr
 		& > ul
 			float: left					 				
-	ul
+	& > ul
 		+clr
 		li
 			float: left
@@ -382,7 +382,60 @@ body
 // select
 .select
 	position: relative
-	 					
+	&__text
+		position: relative
+		display: block
+		height: 30px
+		line-height: 30px
+		+text-overflow 
+		padding: 0 40px 0 18px 
+		background: $orange
+		font-weight: bold
+		font-size: 14px
+		color: #fff
+		cursor: pointer
+		+nosel
+		&:before
+			content: ""
+			position: absolute
+			top: 11px
+			right: 11px
+			+s(select) 
+	select
+		visibility: hidden
+	&__list
+		position: absolute
+		top: 30px
+		left: 0
+		right: 0
+		background: $orange
+		z-index: 9
+		font-size: 14px
+		a
+			display: block
+			padding: 5px 18px
+			text-decoration: none
+			color: #fff
+			+tr(background 200ms)
+			&:hover
+				background: #cb5700 
+				
+//pagination
+.pagination
+	+clr
+	height: 50px
+	background: #050505 
+	&__back
+		float: left
+	&__forward
+		float: right
+	&__pager
+		overflow: hidden
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: middle		
+
 
 
 
