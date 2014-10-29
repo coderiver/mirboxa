@@ -126,14 +126,11 @@
             top: 14px
             left: 14px
             +s(m-news)
-    &__list
-        & > li
-            display: table
-            width: 100% 
-            &:nth-child(2n+1)
-                background: #121212
-            +r(400)
-                display: block    
+.item
+    display: table
+    width: 100%
+    +r(400)
+        display: block         
     &__img
         display: table-cell
         vertical-align: top
@@ -150,12 +147,13 @@
             width: 100%
             height: auto
     &__content
+        position: relative 
         display: table-cell
         vertical-align: top
         padding: 20px
         font-size: 14px
         +r(400)
-            display: block
+            display: block               
     &__link
         display: inline-block
         margin-bottom: 15px
