@@ -46,6 +46,9 @@
 		left: 0
 		text-align: center
 		z-index: 2
+		.event &
+			+r(568)
+				bottom: 45px
 	&__date
 		display: inline-block
 		padding: 0 22px 
@@ -83,7 +86,35 @@
 				&:before
 					display: none
 		+r(480)
-			font-size: 40px				 	
+			font-size: 40px
+	&__place
+		text-align: center
+		margin-top: 1px
+		a
+			position: relative
+			display: inline-block
+			background: #000
+			padding: 0 30px 0 50px
+			height: 50px
+			line-height: 50px
+			color: #fff
+			font-size: 14px
+			text-transform: uppercase
+			text-decoration: none
+			+tr(color 200ms)
+			&:before
+				content: ""
+				position: absolute
+				top: 14px
+				left: 20px
+				+s(marker)
+			&:after
+				content: " »"
+				display: inline-block
+				margin-left: 3px 
+				color: $orange
+			&:hover
+				color: $orange 		    					 	
 .slick-prev
 	position: absolute
 	top: 190px

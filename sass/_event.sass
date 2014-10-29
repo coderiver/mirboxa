@@ -1,0 +1,50 @@
+//styles for event page
+.event
+    .banner
+        +r(767)
+            display: block
+    &__content
+        +clr
+    &__gallery
+        float: left
+        width: 400px
+        +clr
+        +r(1200)
+            width: 320px
+        +r(960)
+            width: 33%
+        +r(600)
+            width: 100%    
+        li
+            float: left
+            width: 200px
+            font-size: 0
+            overflow: hidden
+            height: 200px
+            img
+                width: 100%
+                height: 100%
+            +r(1200)
+                width: 160px
+                height: 160px
+            +r(960)
+                width: 50%
+                height: auto             
+    &__article
+        float: right
+        width: 800px
+        +box
+        padding: 30px
+        +r(1200)
+            width: 640px
+        +r(960)
+            width: 67%
+            padding: 20px
+        +r(600)
+            width: 100%
+        .h3
+            margin-bottom: 30px    
+        p
+            +ptsans
+            font-size: 16px
+            margin-bottom: 30px                             
