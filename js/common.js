@@ -28,7 +28,13 @@ head.ready(function() {
   		  	}
   		  }
   		]
-	})
+	});
+
+	$('.js-events').slick({
+		dots: true,
+  		arrows: true,
+  		slidesToShow: 1
+	});
 
 	// mobile menu
 

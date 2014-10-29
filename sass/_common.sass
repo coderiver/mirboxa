@@ -341,7 +341,9 @@ body
 	&.breadcrumbs_events
 		+clr
 		& > ul
-			float: left					 				
+			float: left
+			+r(568)
+				float: none					 				
 	& > ul
 		+clr
 		li
@@ -424,17 +426,62 @@ body
 .pagination
 	+clr
 	height: 50px
-	background: #050505 
+	background: #050505
+	&__back, &__forward
+		position: relative
+		width: 50px
+		height: 50px
+		background: $orange
+		+tr(background 200ms)
+		&:hover
+			background: #cb5700
+		&.is-disabled
+			cursor: default
+			&:hover
+				background: $orange 
+			&:before
+				opacity: 0.5	 
 	&__back
 		float: left
+		&:before
+			content: ""
+			position: absolute
+			top: 14px
+			left: 18px
+			+s(prev)
 	&__forward
 		float: right
+		&:before
+			content: ""
+			position: absolute
+			top: 14px
+			left: 20px
+			+s(next)
 	&__pager
 		overflow: hidden
 		text-align: center
+		padding: 10px 0 
 		li
 			display: inline-block
-			vertical-align: middle		
+			vertical-align: middle
+			margin: 0 5px 
+			color: #333
+			font-weight: bold
+			font-size: 14px
+			a
+				display: block
+				height: 30px
+				width: 30px
+				text-align: center
+				line-height: 30px 
+				background: $orange
+				color: #fff
+				text-decoration: none
+				font-size: 14px
+				font-weight: bold
+				+tr(background 200ms)
+				&:hover
+					background: #cb5700		
 
 
 

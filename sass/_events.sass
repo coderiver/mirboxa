@@ -2,11 +2,17 @@
 .filters
     float: right
     +clr
+    +r(568)
+        float: none
     &__select
         float: left
-        height: 50px 
+        height: 50px
+        +box
+        padding: 10px 0  
         font-size: 0
         margin-right: 120px
+        +r(860)
+            margin-right: 30px
         & > span, .select
             display: inline-block
             vertical-align: middle
@@ -14,7 +20,9 @@
             +ptsans
             font-size: 12px
             color: #4d4d4d
-            line-height: 50px
+            line-height: 30px
+            +r(860)
+                display: none
         .select
             height: 30px
             margin: 0 11px
@@ -43,6 +51,15 @@
                         &:hover
                             color: #fff 
 .events
+    background: #050505
+    +r(767)
+        display: none
+        padding-bottom: 50px 
+    &.events_mob
+        display: none
+        padding-bottom: 50px  
+        +r(767)
+            display: block
     &__list
         +clr
     &__item
@@ -53,6 +70,13 @@
         +r(1200)
             width: 480px
             height: 320px
+        +r(960)
+            width: 50%
+            height: auto
+            padding-bottom: 25%
+        +r(600)
+            width: 100%
+            padding-bottom: 50%         
     &__img
         position: absolute
         top: 0
@@ -64,7 +88,9 @@
         z-index: 1
         img
             width: 100%
-            height: 100% 
+            height: 100%
+            +r(960)
+                height: auto     
     &__content
         position: absolute
         left: 16px
@@ -86,5 +112,33 @@
                 color: #fff
                 background: #000
                 box-shadow: 6px 0 0 0 #000, -6px 0 0 0 #000
-                  
+    .slick-prev
+        left: 0
+        bottom: 0
+        margin-left: 0
+    .slick-next
+        right: 0
+        bottom: 0     
+        margin-right: 0       
+    .slick-dots
+        position: absolute
+        bottom: 0
+        left: 50px
+        right: 50px
+        text-align: center
+        li
+            display: inline-block
+            height: 50px
+            line-height: 50px
+            margin: 0 17px 
+            button
+                vertical-align: middle
+                +hidetext
+                width: 7px
+                height: 7px
+                border-radius: 50%
+                background: #fff 
+            &.slick-active
+                button
+                    background: $orange              
                                                             
