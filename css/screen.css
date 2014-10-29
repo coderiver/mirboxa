@@ -124,7 +124,6 @@ body.no-scroll { overflow: hidden; }
 .breadcrumbs.breadcrumbs_events { *zoom: 1; }
 .breadcrumbs.breadcrumbs_events:after { content: " "; display: table; clear: both; }
 .breadcrumbs.breadcrumbs_events > ul { float: left; }
-@media only screen and (max-width: 568px) { .breadcrumbs.breadcrumbs_events > ul { float: none; } }
 .breadcrumbs > ul { *zoom: 1; }
 .breadcrumbs > ul:after { content: " "; display: table; clear: both; }
 .breadcrumbs > ul li { float: left; position: relative; margin-left: 32px; height: 50px; line-height: 50px; }
@@ -574,13 +573,14 @@ body.no-scroll { overflow: hidden; }
 
 .filters { float: right; *zoom: 1; }
 .filters:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 568px) { .filters { float: none; } }
+@media only screen and (max-width: 600px) { .filters { float: none; clear: left; padding-left: 10px; } }
 .filters__select { float: left; height: 50px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 0; font-size: 0; margin-right: 120px; }
 @media only screen and (max-width: 860px) { .filters__select { margin-right: 30px; } }
 .filters__select > span, .filters__select .select { display: inline-block; vertical-align: middle; }
 .filters__select > span { font-family: "PT Sans", sans-serif; font-size: 12px; color: #4d4d4d; line-height: 30px; }
 @media only screen and (max-width: 860px) { .filters__select > span { display: none; } }
 .filters__select .select { height: 30px; margin: 0 11px; }
+@media only screen and (max-width: 600px) { .filters__select .select { margin: 0; } }
 .filters__tabs { float: left; padding: 10px 0; }
 .filters__tabs > ul { *zoom: 1; }
 .filters__tabs > ul:after { content: " "; display: table; clear: both; }
