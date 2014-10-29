@@ -499,6 +499,7 @@ body.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 960px) { .post__avatar { width: 33%; height: auto; } }
 @media only screen and (max-width: 767px) { .post__avatar { width: 100%; } }
 .post__avatar img { width: 100%; height: 100%; max-width: 400px; }
+@media only screen and (max-width: 767px) { .post__avatar img { height: auto; } }
 .post__body { float: right; width: 800px; min-height: 400px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 30px; background: #1a1a1a; font-family: "PT Sans", sans-serif; font-size: 16px; }
 @media only screen and (max-width: 1200px) { .post__body { width: 640px; } }
 @media only screen and (max-width: 960px) { .post__body { width: 67%; } }
@@ -517,10 +518,11 @@ body.no-scroll { overflow: hidden; }
 .media__list > li { float: left; width: 100px; height: 100px; }
 @media only screen and (max-width: 1200px) { .media__list > li { width: 80px; height: 80px; } }
 @media only screen and (max-width: 960px) { .media__list > li { width: 25%; height: auto; } }
-@media only screen and (max-width: 900px) { .media__list > li { width: 50%; height: auto; } }
+@media only screen and (max-width: 900px) { .media__list > li { width: 50%; } }
 @media only screen and (max-width: 767px) { .media__list > li { width: 25%; } }
 .media__list > li a { display: block; font-size: 0; }
 .media__list > li a img { width: 100%; height: 100%; }
+@media only screen and (max-width: 767px) { .media__list > li a img { height: auto; } }
 .media__video { position: relative; }
 .media__video:before { content: ""; position: absolute; top: 50%; left: 50%; margin: -14px 0 0 -10px; background: url('../img/icons-s8a6adb6c96.png') 0 -684px no-repeat; width: 21px; height: 28px; }
 

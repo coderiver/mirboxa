@@ -18,7 +18,9 @@
         img
             width: 100%
             height: 100%
-            max-width: 400px  
+            max-width: 400px
+            +r(767)
+                height: auto   
     &__body
         float: right
         width: 800px
@@ -79,16 +81,16 @@
                 height: auto 
             +r(900)
                 width: 50%
-                height: auto
             +r(767)
                 width: 25%                           
             a
                 display: block
-                //height: 100%
                 font-size: 0
                 img
                     width: 100%
-                    height: 100%              
+                    height: 100%
+                    +r(767)
+                        height: auto                  
     &__video
         position: relative
         &:before
