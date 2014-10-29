@@ -337,7 +337,11 @@ body
 			ul
 				li
 					&:first-child
-						display: none 				
+						display: none
+	&.breadcrumbs_events
+		+clr
+		& > ul
+			float: left					 				
 	ul
 		+clr
 		li
@@ -374,6 +378,11 @@ body
 						color: #fff
 				&:before
 					display: none
+					
+// select
+.select
+	position: relative
+	 					
 
 
 
