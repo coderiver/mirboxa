@@ -134,6 +134,13 @@ head.ready(function() {
 	}
 	logoScroll();
 	
+// fancybox
+	
+	$(".fancybox").fancybox({
+		padding: 0,
+		nextEffect: 'fade',
+		prevEffect: 'fade'
+	});	
 
 	$(window).scroll(function(){
 		logoScroll();
