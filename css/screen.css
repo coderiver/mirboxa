@@ -324,8 +324,8 @@ body.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 480px) { .boxers__value { font-size: 16px; margin-bottom: 10px; } }
 .boxers__more { position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; line-height: 50px; background: black; font-weight: bold; color: white; text-align: center; opacity: 0; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; z-index: 3; }
 @media only screen and (max-width: 1200px) { .boxers__more { width: 40px; height: 40px; line-height: 40px; } }
-.boxers .slick-prev { left: 0; bottom: 0; margin-left: 0; }
-.boxers .slick-next { right: 0; bottom: 0; margin-right: 0; }
+.boxers .slick-prev { left: 0; top: auto; bottom: 0; margin-left: 0; }
+.boxers .slick-next { right: 0; bottom: 0; top: auto; margin-right: 0; }
 .boxers .slick-dots { position: absolute; bottom: 0; left: 50px; right: 50px; text-align: center; }
 .boxers .slick-dots li { display: inline-block; height: 50px; line-height: 50px; margin: 0 17px; }
 .boxers .slick-dots li button { vertical-align: middle; font: 0/0 a; text-shadow: none; color: transparent; width: 7px; height: 7px; border-radius: 50%; background: white; }
@@ -358,13 +358,13 @@ body.no-scroll { overflow: hidden; }
 .boxer__fact { position: relative; float: left; width: 240px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-right: 30px; margin-bottom: 20px; padding: 65px 30px 50px; background: #e9700d; color: white; font-family: "PT Sans", sans-serif; font-size: 14px; }
 .boxer__fact:before { content: ""; position: absolute; top: 30px; left: 30px; background: url('../img/icons-s46ab90ff26.png') 0 -834px no-repeat; width: 25px; height: 23px; }
 @media only screen and (max-width: 568px) { .boxer__fact { width: 100%; } }
-.boxer__media { position: relative; width: 400px; float: left; box-shadow: 0 40px 40px -28px black; }
+.boxer__media { position: relative; width: 400px; float: left; }
 @media only screen and (max-width: 1200px) { .boxer__media { width: 320px; } }
 @media only screen and (max-width: 960px) { .boxer__media { width: 32%; } }
 @media only screen and (max-width: 767px) { .boxer__media { width: 100%; } }
 .boxer__media ul { *zoom: 1; }
 .boxer__media ul:after { content: " "; display: table; clear: both; }
-.boxer__media ul li { width: 50%; float: left; font-size: 0; }
+.boxer__media ul li { width: 50%; float: left; font-size: 0; box-shadow: 0 40px 40px -28px black; }
 .boxer__media ul li img { width: 100%; }
 
 .stats { padding: 30px 30px 10px; *zoom: 1; font-weight: bold; font-size: 16px; }
