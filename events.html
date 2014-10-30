@@ -70,8 +70,8 @@
 			<ul>
 				<li><a href="#">СОБЫТИЯ</a></li>
 			</ul>
-			<div class="filters">
-				<div class="filters__select">
+			<div class="filters js-tab-group">
+				<div class="filters__select js-tab1 js-tab-cont" style="display: none;">
 					<span>События за</span>
 					<div class="select js-select">
 						<span class="select__text js-select-text">2014</span><i></i>
@@ -90,10 +90,28 @@
                 	</div>
 					<span>год</span>
 				</div>
-				<div class="filters__tabs">
+				<div class="filters__select js-tab2 js-tab-cont" style="display: none;">
+					<span>Боксеры</span>
+					<div class="select js-select">
+						<span class="select__text js-select-text">кличко</span><i></i>
+                    	<ul class="select__list js-select-list" style="display: none;">
+                    	  	<li><a href="0" class="is-active">кличко</a></li>
+                    	  	<li><a href="1">кличко1</a></li>
+                    	  	<li><a href="2">кличко2</a></li>
+                    	  	<li><a href="3">кличко3</a></li>
+                    	</ul>
+                    	<select class="js-select-body">
+                    	  	<option value="0">кличко</option>
+                    	  	<option value="1">кличко1</option>
+                    	  	<option value="2">кличко2</option>
+                    	  	<option value="3">кличко3</option>
+                    	</select>
+                	</div>
+				</div>
+				<div class="filters__tabs js-tab">
 					<ul>
-						<li><a href="#" class="is-active">ПЕРИОД</a></li>
-						<li><a href="#">БОКСЕР</a></li>
+						<li><a href="js-tab1">ПЕРИОД</a></li>
+						<li><a href="js-tab2">БОКСЕР</a></li>
 					</ul>
 				</div>
 			</div>
