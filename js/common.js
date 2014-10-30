@@ -146,7 +146,7 @@ head.ready(function() {
 
 	if ($('.js-callback').length) {
 		$('.js-callback').on('click', function() {
-			$('.js-callback-popup').addClass('is-open').show();
+			$('.js-callback-popup').show();
 		});
 	};
 	$('.js-popup-close').on('click', function(){
