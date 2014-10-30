@@ -1,0 +1,28 @@
+// photogallery
+.photogallery
+    font-size: 0
+    margin: 0 -1px
+    +r(600)
+        box-shadow: 0 40px 40px -28px #000 
+    li
+        display: inline-block
+        vertical-align: top
+        width: 200px
+        height: 200px
+        +box
+        overflow: hidden
+        font-size: 0
+        border: 1px solid #1f1f1f
+        box-shadow: 0 40px 40px -28px #000
+        +r(1200)
+            width: 160px
+            height: 160px
+        +r(960)
+            width: 25%
+            height: auto
+        +r(600)
+            width: 50%
+            box-shadow: none          
+        img
+            width: 100%
+            height: 100%  
