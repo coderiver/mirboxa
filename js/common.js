@@ -142,6 +142,23 @@ head.ready(function() {
 		prevEffect: 'fade'
 	});	
 
+// callback popup init
+
+	if ($('.js-callback').length) {
+		$('.js-callback').on('click', function() {
+			$('.js-callback-popup').addClass('is-open').show();
+		});
+	};
+	$('.js-popup-close').on('click', function(){
+		$('.js-callback-popup').hide();
+	});
+	$('.js-callback-popup').on('click', function(event){
+		$(this).hide();
+	})
+	$('.popup').on('click', function(event){
+		event.stopPropagation();
+	})
+
 	$(window).scroll(function(){
 		logoScroll();
 	});
