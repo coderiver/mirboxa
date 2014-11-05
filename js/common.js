@@ -21,10 +21,15 @@ head.ready(function() {
   		    }
   		  },
   		  {
+  		  breakpoint: 700,
+  		  settings: {
+  		  	dots: false
+  		  }
+  		  },
+  		  {
   		  	breakpoint: 480,
   		  	settings: {
-  		  		slidesToShow: 1,
-  		  		dots: true
+  		  		slidesToShow: 1
   		  	}
   		  }
   		]
@@ -33,7 +38,15 @@ head.ready(function() {
 	$('.js-events').slick({
 		dots: true,
   		arrows: true,
-  		slidesToShow: 1
+  		slidesToShow: 1,
+  		responsive: [
+  		  {
+  		  breakpoint: 700,
+  		  settings: {
+  		  	dots: false
+  		  }
+  		  }
+  		]
 	});
 
 	// mobile menu
